@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  @apply bg-gray-50 text-gray-900 dark:bg-[#09090B] dark:text-white transition-colors duration-300;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+:root {
+  --select-bg: #f9fafb;
+  --select-bg-focus: #f3f4f6;
+  --select-bg-active: #e5e7eb;
+  --select-border: #d1d5db;
+  --select-border-hover: #9ca3af;
+  --select-text: #111827;
+  --select-text-muted: #6b7280;
+}
+
+.dark {
+  --select-bg: #111;
+  --select-bg-focus: #222;
+  --select-bg-active: #444;
+  --select-border: #333;
+  --select-border-hover: #555;
+  --select-text: #fff;
+  --select-text-muted: #aaa;
+}
+
+.sp-text {
+  background: conic-gradient(at top, #c084fc, #a855f7);
+  /* from-purple-400 → to-purple-500 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.icon {
+  padding: 15px;
+  font-size: 20px;
+  border: 1px solid transparent;
+  @apply border-gray-200 bg-white dark:border-gray-800 dark:bg-[#141319] transition-colors rounded-lg cursor-pointer;
+}
