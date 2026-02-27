@@ -1,6 +1,7 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
 import api from '../lib/api';
 import { toast } from 'react-toastify';
+import { googleLogout } from '@react-oauth/google';
 
 const AuthContext = createContext();
 
@@ -71,6 +72,7 @@ export const AuthProvider = ({ children }) => {
     const logout = async () => {
         try {
             await api.post('/auth/logout');
+            googleLogout();
             setUser(null);
             toast.success('Logged out successfully');
         } catch (error) {
