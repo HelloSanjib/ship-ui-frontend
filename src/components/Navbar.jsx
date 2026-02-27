@@ -68,6 +68,7 @@ const Navbar = () => {
                   theme={theme === 'dark' ? 'filled_black' : 'outline'}
                   shape="pill"
                   text="continue_with"
+                  prompt="select_account"
                 />
               </div>
             )
